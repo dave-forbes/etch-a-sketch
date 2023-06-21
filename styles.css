@@ -1,0 +1,18 @@
+div {
+  border: solid 1px red;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#grid-container {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
