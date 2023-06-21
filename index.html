@@ -10,9 +10,23 @@
 </head>
 
 <body>
-  <button>Grid Size?</button>
-  <div id="grid-container">
 
+  <div id="pencil-case">
+    <h1>Sketchy-Etch-a-Sketch</h1>
+    <div class="slider-container">
+      <label>Set pencil thickness and clear pad</label>
+      <input type="range" min="16" max="100" value="50" class="slider" id="slider">
+    </div>
+    <div id="color-picker">
+      <label>Choose color</label>
+      <input id="color" type="color">
+    </div>
+    <div id="eraser-container">
+      <button id="eraser">Eraser</button>
+    </div>
+  </div>
+  <div id="wrapper">
+    <div id="grid-container"></div>
   </div>
 </body>
 
