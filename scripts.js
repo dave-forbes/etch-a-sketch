@@ -4,13 +4,16 @@ const color = document.querySelector('#color');
 const eraser = document.querySelector('#eraser');
 const colorButton = document.querySelector('#color-button');
 let colorValue = 'black';
+
 const divs = Array.from({ length: 2500 }, () => document.createElement('div'));
-gridContainer.style.cssText = `grid-template-columns: repeat(50, 1fr); grid-template-rows: repeat(50, 1fr);`;
+gridContainer.style.cssText = `grid-template-columns: repeat(50, 1fr); grid-template-rows: repeat(50, 1fr);`;      // Create 50 x 50 grid when page loads
 gridContainer.append(...divs);
-divs.forEach((item) => item.addEventListener('mouseover', () => item.style.backgroundColor = colorValue));
+
+divs.forEach((item) => item.addEventListener('mouseover', () => item.style.backgroundColor = colorValue));         // Allows the cursor to 'draw' on the grid according to what color its set to
+
 colorButton.style.color = 'gold';
 
-color.addEventListener('change', () => colorValue = color.value);
+color.addEventListener('change', () => colorValue = color.value);                                           // Change color
 color.addEventListener('change', () => {
   colorButton.style.color = 'gold';
   eraser.style.color = 'black';
@@ -32,7 +35,7 @@ colorButton.addEventListener('click', () => {
 slider.addEventListener('change', () => {
   gridContainer.innerHTML = '';
   const rowSize = slider.value;
-  gridContainer.style.cssText = `grid-template-columns: repeat(${rowSize}, 1fr); grid-template-rows: repeat(${rowSize}, 1fr);`;
+  gridContainer.style.cssText = `grid-template-columns: repeat(${rowSize}, 1fr); grid-template-rows: repeat(${rowSize}, 1fr);`;            //When slider is changed grid is reset and recreated to whatever the slider value is
   const gridTotal = Math.pow(rowSize, 2);
   const divs = Array.from({ length: gridTotal }, () => document.createElement('div'));
   gridContainer.append(...divs);
