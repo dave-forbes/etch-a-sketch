@@ -7,30 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lobster:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
 
 <body>
 
-  <div id="pencil-case">
-    <h1>Sketchy-Etch-a-Sketch</h1>
-    <div class="slider-container">
-      <label>Set pencil thickness and clear pad</label>
-      <input type="range" min="16" max="100" value="50" class="slider" id="slider">
+  <div id="red-background">
+    <h1>Etch-A-Sketch</h1>
+    <div id="wrapper">
+      <div id="grid-container"></div>
     </div>
-    <div id="color-picker">
-      <label>Choose color</label>
-      <input id="color" type="color">
-    </div>
-    <div id="eraser-container">
-      <button id="eraser">Eraser</button>
-    </div>
-    <div id="color-container">
-      <button id="color-button">Color</button>
+    <div id="control-wrapper">
+      <div class="white-circle">
+        <button id="color-button">Draw</button>
+      </div>
+      <div id="pencil-case">
+        <div class="slider-container">
+          <label>Set pixel size and clear pad</label>
+          <input type="range" min="16" max="100" value="50" class="slider" id="slider">
+        </div>
+        <div id="button-wrapper">
+          <div id="color-picker">
+            <label>Choose color</label>
+            <input id="color" type="color">
+          </div>
+        </div>
+      </div>
+      <div class="white-circle">
+        <button id="eraser">Eraser</button>
+      </div>
     </div>
   </div>
-  <div id="wrapper">
-    <div id="grid-container"></div>
-  </div>
+
 </body>
 
 <script src="scripts.js"></script>
