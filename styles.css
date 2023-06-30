@@ -43,6 +43,7 @@ button {
   padding: 15px 20px;
   border-radius: 10px;
   border: 2px solid black;
+  box-shadow: 10px 10px 37px 5px rgba(0, 0, 0, 0.4);
 }
 
 #grid-container {
@@ -54,6 +55,7 @@ button {
   border-radius: 20px;
   margin: 1vw 0;
   overflow: hidden;
+  box-shadow: inset 10px 10px 90px -40px rgba(0, 0, 0, 1);
 }
 
 #control-wrapper {
