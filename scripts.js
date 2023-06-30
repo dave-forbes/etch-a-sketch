@@ -11,22 +11,22 @@ gridContainer.append(...divs);
 
 divs.forEach((item) => item.addEventListener('mouseover', () => item.style.backgroundColor = colorValue));         // Allows the cursor to 'draw' on the grid according to what color its set to
 
-colorButton.style.color = 'gold';
+colorButton.style.color = '#F8DC3C';
 
 color.addEventListener('change', () => colorValue = color.value);                                           // Change color
 color.addEventListener('change', () => {
-  colorButton.style.color = 'gold';
+  colorButton.style.color = '#F8DC3C';
   eraser.style.color = 'black';
 })
 eraser.addEventListener('click', () => colorValue = null);
 eraser.addEventListener('click', () => {
-  eraser.style.color = 'gold';
+  eraser.style.color = '#F8DC3C';
   colorButton.style.color = 'black';
 }
 );
 colorButton.addEventListener('click', () => colorValue = color.value);
 colorButton.addEventListener('click', () => {
-  colorButton.style.color = 'gold';
+  colorButton.style.color = '#F8DC3C';
   eraser.style.color = 'black';
 }
 );
