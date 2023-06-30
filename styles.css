@@ -8,7 +8,8 @@ body {
   flex-direction: column;
   background-color: aquamarine;
   font-family: 'Lobster';
-  color: gold
+  color: gold;
+  gap: 40px;
 }
 
 h1 {
@@ -43,7 +44,7 @@ button {
 
 #grid-container {
   width: 40vw;
-  height: 30vw;
+  height: 25vw;
   display: grid;
   border: solid 0.3vw black;
   background-color: gainsboro;
@@ -119,4 +120,15 @@ input[type="color"]::-moz-color-swatch {
   width: 1vw;
   height: 1vw;
   margin-top: -0.3vw;
+}
+
+
+footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: black;
 }
