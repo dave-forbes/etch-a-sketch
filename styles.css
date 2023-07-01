@@ -9,25 +9,25 @@ body {
   background-color: rgb(175, 255, 228);
   font-family: 'Lobster';
   color: #F8DC3C;
-  gap: 40px;
+  gap: max(5px, 5vh);
   letter-spacing: 2px;
 }
 
 h1 {
   text-align: center;
   margin: 0;
-  font-size: 50px;
+  font-size: min(50px, 5vw);
   letter-spacing: 5px;
 }
 
 div {
-  font-size: 25px;
+  font-size: min(25px, 3vw);
 }
 
 button {
   font-family: 'Lobster';
   color: black;
-  font-size: 25px;
+  font-size: min(25px, 2vw);
   border-radius: 50%;
   width: inherit;
   height: inherit;
@@ -40,15 +40,15 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15px 20px;
+  padding: min(20px, 5vw) min(60px, 5vw);
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 10px 10px 37px 5px rgba(0, 0, 0, 0.4);
 }
 
 #grid-container {
-  width: 800px;
-  height: 500px;
+  width: min(800px, 80vw);
+  height: min(500px, 50vh);
   display: grid;
   border: solid 2px black;
   background-color: gainsboro;
@@ -60,7 +60,7 @@ button {
 
 #control-wrapper {
   display: flex;
-  gap: 80px
+  gap: min(80px, 3vw);
 }
 
 #pencil-case {
@@ -78,8 +78,8 @@ button {
 }
 
 .white-circle {
-  width: 110px;
-  height: 110px;
+  width: min(110px, 15vw);
+  height: min(110px, 15vw);
   border-radius: 50%;
 }
 
@@ -88,7 +88,7 @@ input[type="range"] {
   appearance: none;
   background: transparent;
   cursor: pointer;
-  width: 180px;
+  width: min(180px, 5w);
   border: 3px solid #F8DC3C;
   border-radius: 5px;
   overflow: hidden;
@@ -98,8 +98,8 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background-color: black;
-  height: 30px;
-  width: 20px;
+  height: min(30px, 4vh);
+  width: min(20px, 3vh);
 }
 
 input[type="color"] {
@@ -130,7 +130,7 @@ input[type="color"]::-moz-color-swatch {
 
 footer {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+  font-size: min(20px, 3vw);
   display: flex;
   flex-direction: row;
   align-items: center;
