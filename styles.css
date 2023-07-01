@@ -9,19 +9,18 @@ body {
   background-color: rgb(175, 255, 228);
   font-family: 'Lobster';
   color: #F8DC3C;
-  gap: max(5px, 5vh);
   letter-spacing: 2px;
 }
 
 h1 {
   text-align: center;
   margin: 0;
-  font-size: min(50px, 5vw);
+  font-size: min(40px, 3vw);
   letter-spacing: 5px;
 }
 
 div {
-  font-size: min(25px, 3vw);
+  font-size: min(25px, 2vw);
 }
 
 button {
@@ -40,15 +39,15 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: min(20px, 5vw) min(60px, 5vw);
+  padding: min(20px, 5vw) min(5vw, 5vh);
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 10px 10px 37px 5px rgba(0, 0, 0, 0.4);
 }
 
 #grid-container {
-  width: min(800px, 80vw);
-  height: min(500px, 50vh);
+  width: clamp(300px, 60vw, 750px);
+  aspect-ratio: 16 / 9;
   display: grid;
   border: solid 2px black;
   background-color: gainsboro;
@@ -60,26 +59,26 @@ button {
 
 #control-wrapper {
   display: flex;
-  gap: min(80px, 3vw);
+  gap: min(5vh, 5vw);
 }
 
 #pencil-case {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: min(10px, 0.5vw);
   align-items: center;
   padding: 10px;
 }
 
 #pencil-case div {
   display: flex;
-  gap: 20px;
+  gap: min(20px, 0.5vw);
   align-items: center;
 }
 
 .white-circle {
-  width: min(110px, 15vw);
-  height: min(110px, 15vw);
+  width: clamp(60px, 12vw, 110px);
+  height: clamp(60px, 12vw, 110px);
   border-radius: 50%;
 }
 
@@ -137,4 +136,5 @@ footer {
   gap: 10px;
   color: black;
   letter-spacing: 0px;
+  margin-top: 2vw;
 }
