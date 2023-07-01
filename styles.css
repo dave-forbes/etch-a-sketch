@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   background-color: rgb(175, 255, 228);
@@ -146,5 +146,4 @@ footer {
   gap: 10px;
   color: black;
   letter-spacing: 0px;
-  margin-top: 2vw;
 }
