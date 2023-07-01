@@ -39,14 +39,14 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: min(20px, 5vw) min(5vw, 5vh);
+  padding: min(20px, 5vw) min(2vw, 5vh);
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 10px 10px 37px 5px rgba(0, 0, 0, 0.4);
 }
 
 #grid-container {
-  width: clamp(300px, 60vw, 750px);
+  width: clamp(250px, 70vw, 700px);
   aspect-ratio: 16 / 9;
   display: grid;
   border: solid 2px black;
@@ -60,6 +60,16 @@ button {
 #control-wrapper {
   display: flex;
   gap: min(5vh, 5vw);
+}
+
+@media only screen and (max-width: 450px) {
+  #control-wrapper {
+    gap: 0px;
+  }
+
+  #red-background {
+    width: 90vw;
+  }
 }
 
 #pencil-case {
